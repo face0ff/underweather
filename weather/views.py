@@ -10,7 +10,7 @@ def reklama(request,rekid):
     if rekid > 1:
         return HttpResponse(f"<h1>попробуйте угадать что тут у нас, правельно реклама номер- <p>{rekid}</p></h1>")
     else:
-        return redirect('/')
+        return redirect('home')
 
 def pageNotFound(request, exception):
     return HttpResponseNotFound('<h1> ничего тут нет</h1>')
