@@ -1,0 +1,39 @@
+html, body{
+    font-family: 'Arial';
+    margin: 0;
+    padding: 0;
+    color: #444:
+
+
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  grid-template-rows: 1fr 1.5fr;
+  gap: 3px 3px;
+  border: 1px;
+
+
+  background-color: #ffd8a8;
+  grid-template-areas:
+    "all_weather content"
+    "all_weather mesta";
+}
+.mesta { grid-area: mesta; }
+.content { grid-area: content; }
+.all_weather { grid-area: all_weather; }
+}
+.all_weather {
+    background-color: #ffd454;
+    height: 100vh;
+
+}
+
+.mesta {
+    background-color: #ffff55;
+
+}
+.content {
+    background-color: #4553;
+
+}

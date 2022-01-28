@@ -1,0 +1,29 @@
+{% extends 'weather/base.html' %}
+
+{% block content %}
+<hr>
+
+<div class="container">
+
+    <div class="all_weather">
+        Температура воздуха = {{ title }}
+        <p>Влажность воздуха = {{ title }}
+        <p>Направление ветра  {{ title }}
+        <p>Скорость ветра = {{ title }}
+        <p>Температура воды в море = {{ title }}
+
+    </div>
+
+        <div class="content">
+            {% for m in mesta %}
+                {{m.content}}
+            {%endfor%}
+
+        </div>
+        <div class="mesta">
+            {% for m in mesta %}
+                {{ m.title }}
+            {%endfor%}
+</div>
+
+{% endblock %}
