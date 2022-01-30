@@ -1,6 +1,5 @@
 import requests
 import datetime
-from config import token
 from pprint import pprint
 
 def get_weather(city, token):
@@ -35,9 +34,5 @@ def get_weather(city, token):
 
     print(right_now, pogoda, pg)
 
-def main():
-    get_weather("odesa", token)
-
-if __name__ == '__main__':
-    main()
+    return gorod
 
