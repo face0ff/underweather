@@ -12,7 +12,7 @@
     <div class="backG">
         <div class="all_weather">
             <h2>{{right_now}} город {{ gorod }}</h2>
-            <h2><p>Рассвет в {{sunrise}} , закат в {{sunset}}</h2>
+            <h2><p>Рассвет в {{sunrise}} <p></p> закат в {{sunset}}</h2>
             <p>Температура воздуха = {{ tempVo }}
             <p>Ощущается как {{ feel}}
             <p>Давление = {{ press }} мм рт. ст.
@@ -32,14 +32,7 @@
             {% for m in mesta %}
             <h2>{{ m.title }}</h2>
             {%endfor%}
-            <div class="slider">
-                <div class="slider_item">
-                    <img src="{% static 'weather/images/hamam.PNG' %}"/>
-                </div>
-                <div class="slider_item">
-                    <img src="{% static 'weather/images/basein.PNG' %}"/>
-                </div>
-            </div>
+
         </div>
 
 </div>
