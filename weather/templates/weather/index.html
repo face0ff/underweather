@@ -1,8 +1,12 @@
 {% extends 'weather/base.html' %}
+{% load static %}
+
 
 {% block content %}
-<hr>
+
 <meta http-equiv="refresh" content="60*5">
+
+
 
 <div class="container">
     <div class="backG">
@@ -25,13 +29,19 @@
 
         </div>
         <div class="mesta">
-
-
             {% for m in mesta %}
-                <h2>{{ m.title }}</h2>
+            <h2>{{ m.title }}</h2>
             {%endfor%}
-
+            <div class="slider">
+                <div class="slider_item">
+                    <img src="{% static 'weather/images/hamam.PNG' %}"/>
+                </div>
+                <div class="slider_item">
+                    <img src="{% static 'weather/images/basein.PNG' %}"/>
+                </div>
+            </div>
         </div>
+
 </div>
 
 {% endblock %}

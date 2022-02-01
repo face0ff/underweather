@@ -1,3 +1,4 @@
-$(document).ready(function(){
-  $("#slider").owlCarousel();
+ $(document).ready(function(){
+    $('.slider').slick({
+    });
 });
