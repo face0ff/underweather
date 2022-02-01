@@ -19,11 +19,6 @@ def index(request):
         "http://api.openweathermap.org/data/2.5/weather?q=odesa&APPID=1042c1a58dff11fbe074c60d79e1beac&units=metric&lang=RU"
     )
     data = r.json()
-    print(data)
-
-
-
-
     mesta = Mesta.objects.all()
     context = {
         'mesta': mesta,

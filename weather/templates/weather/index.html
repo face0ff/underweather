@@ -2,21 +2,22 @@
 
 {% block content %}
 <hr>
+<meta http-equiv="refresh" content="60*5">
 
 <div class="container">
+    <div class="backG">
+        <div class="all_weather">
+            <h2>{{right_now}} город {{ gorod }}</h2>
+            <h2><p>Рассвет в {{sunrise}} , закат в {{sunset}}</h2>
+            <p>Температура воздуха = {{ tempVo }}
+            <p>Ощущается как {{ feel}}
+            <p>Давление = {{ press }} мм рт. ст.
+            <p>Направление ветра  {{ windD }}
+            <p>Скорость ветра = {{ windS }} М/c
 
-    <div class="all_weather">
-        {{right_now}} в городе {{ gorod }}
-        <p>Рассвет в {{sunrise}} , закат в {{sunset}}
-        <p>Температура воздуха = {{ tempVo }}
-        <p>Ощущается как {{ feel}}
-        <p>Давление = {{ press }} мм рт. ст.
-        <p>Направление ветра  {{ windD }}
-        <p>Скорость ветра = {{ windS }} М/c
 
-
+        </div>
     </div>
-
         <div class="content">
             {% for m in mesta %}
                 {{m.content}}
@@ -24,9 +25,13 @@
 
         </div>
         <div class="mesta">
+
+
             {% for m in mesta %}
-                {{ m.title }}
+                <h2>{{ m.title }}</h2>
             {%endfor%}
+
+        </div>
 </div>
 
 {% endblock %}

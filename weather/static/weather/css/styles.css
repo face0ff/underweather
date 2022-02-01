@@ -1,39 +1,43 @@
-html, body{
-    font-family: 'Arial';
-    margin: 0;
-    padding: 0;
-    color: #444:
-
+body{
+    font-family: 'Times New Roman', Times, serif; /* Шрифт с засечками */
+    font-style: italic;
 
 }
+
 .container {
   display: grid;
   grid-template-columns: 1fr 2.5fr;
   grid-template-rows: 1fr 1.5fr;
-  gap: 3px 3px;
+  gap: 10px 10px;
   border: 1px;
+  width: 100%;
+  height: 100%;
+  background-image:url(../images/gradBack.jpg);
 
-
-  background-color: #ffd8a8;
   grid-template-areas:
-    "all_weather content"
-    "all_weather mesta";
+    "backG content"
+    "backG mesta";
 }
 .mesta { grid-area: mesta; }
 .content { grid-area: content; }
-.all_weather { grid-area: all_weather; }
+.backG { grid-area: backG; }
+
+.backG{
+    background-image:url(../images/plyaj.jpg);
+    height: 520px;
 }
 .all_weather {
-    background-color: #ffd454;
-    height: 100vh;
-
+    margin: 10px;
+    height: 100%;
 }
 
 .mesta {
-    background-color: #ffff55;
+    background-image:url(../images/gradBack2.jpg);
 
 }
 .content {
-    background-color: #4553;
+    background-image:url(../images/gradBack2.jpg);
+
+}
 
 }
