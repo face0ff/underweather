@@ -23,15 +23,27 @@
         </div>
     </div>
         <div class="content">
-            {% for m in mesta %}
-                {{m.content}}
-            {%endfor%}
+
 
         </div>
         <div class="mesta">
-            {% for m in mesta %}
-            <h2>{{ m.title }}</h2>
-            {%endfor%}
+            <div class="slides">
+                <ul> <!-- Слайды -->
+                    <li><img src="{% static "weather/images/hamam.PNG" %}" alt="My image01"/>
+                        <div>{{ mesta1.title }}</div>
+                    </li>
+                    <li><img src="{% static "weather/images/basein.PNG" %}" alt="My image02"/>
+                        <div>{{ mesta2.title }}</div>
+                    </li>
+                    <li><img src="{% static "weather/images/hamam.PNG" %}" alt="My image03"/>
+                        <div>Хама22м</div>
+                    </li>
+                    <li><img src="{% static "weather/images/basein.PNG" %}" alt="My image04"/>
+                        <div>Басе22йн</div>
+                    </li>
+                </ul>
+            </div>
+
 
         </div>
 
