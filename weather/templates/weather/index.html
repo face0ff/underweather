@@ -11,36 +11,35 @@
 <div class="container">
     <div class="backG">
         <div class="all_weather">
-            <h2>{{right_now}} город {{ gorod }}</h2>
-            <h2><p>Рассвет в {{sunrise}} <p></p> закат в {{sunset}}</h2>
-            <p>Температура воздуха = {{ tempVo }}
-            <p>Ощущается как {{ feel}}
+            <h2>{{right_now}} город {{ gorod }}
+            <p>Рассвет в {{sunrise}} <p></p> Закат в {{sunset}}
+            <p>Температура воздуха = {{ tempVo }}°
+            <p>Ощущается как {{ feel}}°
             <p>Давление = {{ press }} мм рт. ст.
-            <p>Направление ветра  {{ windD }}
-            <p>Скорость ветра = {{ windS }} М/c
+            <p>Направление ветра  {{ windD }}°
+            <p>Скорость ветра = {{ windS }} М/c</h2>
 
 
         </div>
     </div>
-        <div class="content">
 
-
-        </div>
         <div class="mesta">
             <div class="slides">
                 <ul> <!-- Слайды -->
-                    <li><img src="{% static "weather/images/hamam.PNG" %}" alt="My image01"/>
-                        <div>{{ mesta1.title }}</div>
+                    <li><img src="{{mesta3.photo}}" alt="My image01"/>
+                        <div>{{ mesta3.title }} <img src="{% static 'weather/images/icons/cloud.png' %}"/> <img src="{% static 'weather/images/icons/rain.png' %}"/>
+                            <img src="{% static 'weather/images/icons/sun.png' %}"/> <img src="{% static 'weather/images/icons/storm.png' %}"/>
+                            </div>
                     </li>
-                    <li><img src="{% static "weather/images/basein.PNG" %}" alt="My image02"/>
-                        <div>{{ mesta2.title }}</div>
+                    <li><img src="{{mesta2.photo}}" alt="My image02"/>
+                        <div>{{ mesta2.title }}
+                        {{ mesta2.content }}</div>
                     </li>
-                    <li><img src="{% static "weather/images/hamam.PNG" %}" alt="My image03"/>
-                        <div>Хама22м</div>
+                    <li><img src="{{mesta1.photo}}" alt="My image03"/>
+                        <div>{{ mesta1.title }}
+                        {{ mesta1.content }}</div>
                     </li>
-                    <li><img src="{% static "weather/images/basein.PNG" %}" alt="My image04"/>
-                        <div>Басе22йн</div>
-                    </li>
+
                 </ul>
             </div>
 

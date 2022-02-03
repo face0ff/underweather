@@ -19,15 +19,14 @@ def index(request):
         "http://api.openweathermap.org/data/2.5/weather?q=odesa&APPID=1042c1a58dff11fbe074c60d79e1beac&units=metric&lang=RU"
     )
     data = r.json()
-    mesta1 = Mesta.objects.get(pk=3)
+    mesta1 = Mesta.objects.get(pk=1)
     mesta2 = Mesta.objects.get(pk=2)
     mesta3 = Mesta.objects.get(pk=3)
-    mesta4 = Mesta.objects.get(pk=3)
+
     context = {
         'mesta1': mesta1,
         'mesta2': mesta2,
         'mesta3': mesta3,
-        'mesta4': mesta4,
         'menu': menu,
         'title': 'Главная страница',
         'gorod': data['name'],

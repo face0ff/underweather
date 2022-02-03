@@ -1,33 +1,28 @@
 body{
-    font-family: 'Times New Roman', Times, serif; /* Шрифт с засечками */
-    font-style: italic;
+    font-family: 'Comic Sans MS';
 
 }
 
 .container {
   display: grid;
   grid-template-columns: 500px 1fr;
-  grid-template-rows: 1fr 1fr;
+
   border: 1px;
   width: 100vw;
   height: 100vh;
   background-image:url(../images/gradBack.jpg);
-  border: 5px solid maroon;
+
 
   grid-template-areas:
-    "backG content"
-    "backG mesta";
+    "backG mesta"
+
 }
 .mesta { grid-area: mesta; }
-.content { grid-area: content; }
 .backG { grid-area: backG; }
 
 .backG{
 
   display: grid;
-  grid-template-columns: 300px;
-  grid-template-rows: 300px;
-  gap: 0px 0px;
   justify-self: center;
   align-self: center;
 
@@ -39,21 +34,19 @@ body{
 
 .mesta {
     background-image:url(../images/gradBack2.jpg);
-    border-left: 2px solid maroon;
-
 
 }
-.content {
-    background-image:url(../images/gradBack2.jpg);
-    border-left: 2px solid maroon;
 
-}
 /* Слайдер */
 .slides {
+    display: flex;
+    justify-content: flex-start;
     height:70vh;
     width:70vw;
-    overflow:hidden;
-    position:relative;
+    position:absolute;
+    top: 25%;
+    left: 27.5%;
+
 
 }
 .slides ul {
@@ -75,7 +68,7 @@ body{
     30% {
         opacity:0;
     }
-    100% {
+    70% {
         opacity:0;
     }
 }
@@ -92,7 +85,7 @@ body{
     30% {
         opacity:0;
     }
-    100% {
+    70% {
         opacity:0;
     }
 }
@@ -100,11 +93,12 @@ body{
 .slides ul li {
     opacity:0;
     position:absolute;
-    top:0;
+
+
 
     /* анимация css3 */
     -webkit-animation-name: anim_slides;
-    -webkit-animation-duration: 24.0s;
+    -webkit-animation-duration: 45s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: normal;
@@ -113,7 +107,7 @@ body{
     -webkit-animation-fill-mode: forwards;
 
     -moz-animation-name: anim_slides;
-    -moz-animation-duration: 24.0s;
+    -moz-animation-duration: 45s;
     -moz-animation-timing-function: linear;
     -moz-animation-iteration-count: infinite;
     -moz-animation-direction: normal;
@@ -124,16 +118,16 @@ body{
 
 /* Задержки css3 */
 .slides ul  li:nth-child(2), .slides ul  li:nth-child(2) div {
-    -webkit-animation-delay: 6.0s;
-    -moz-animation-delay: 6.0s;
+    -webkit-animation-delay: 15s;
+    -moz-animation-delay: 15s;
 }
 .slides ul  li:nth-child(3), .slides ul  li:nth-child(3) div {
-    -webkit-animation-delay: 12.0s;
-    -moz-animation-delay: 12.0s;
+    -webkit-animation-delay: 30.0s;
+    -moz-animation-delay: 30.0s;
 }
 .slides ul  li:nth-child(4), .slides ul  li:nth-child(4) div {
-    -webkit-animation-delay: 18.0s;
-    -moz-animation-delay: 18.0s;
+    -webkit-animation-delay: 45s;
+    -moz-animation-delay: 45s;
 }
 .slides ul li img {
     display:block;
@@ -142,65 +136,62 @@ body{
 /* Кадры анимации #anim_titles */
 @-webkit-keyframes anim_titles {
     0% {
-        left:100%;
+        left:70%;
         opacity:0;
     }
     5% {
-        left:10%;
+        left:0%;
         opacity:1;
     }
     20% {
-        left:10%;
+        left:0%;
         opacity:1;
     }
     25% {
-        left:100%;
+        left:70%;
         opacity:0;
     }
-    100% {
-        left:100%;
+    70% {
+        left:70%;
         opacity:0;
     }
 }
 @-moz-keyframes anim_titles {
     0% {
-        left:100%;
+        left:70%;
         opacity:0;
     }
     5% {
-        left:10%;
+        left:0%;
         opacity:1;
     }
     20% {
-        left:10%;
+        left:0%;
         opacity:1;
     }
     25% {
-        left:100%;
+        left:70%;
         opacity:0;
     }
-    100% {
-        left:100%;
+    70% {
+        left:70%;
         opacity:0;
     }
 }
 
 .slides ul li div {
-    background-color:#000000;
-    border-radius:10px 10px 10px 10px;
-    box-shadow:0 0 5px #FFFFFF inset;
-    color:#FFFFFF;
-    font-size:26px;
-    left:10%;
-    margin:0 auto;
-    padding:20px;
+    display:flex;
+    justify-content: flex-start
+    color:#34545;
+    font-size:30px;
+    padding:5px;
     position:absolute;
-    top:50%;
-    width:200px;
+    top:-15vh;
+
 
     /* Анимация css3 */
     -webkit-animation-name: anim_titles;
-    -webkit-animation-duration: 24.0s;
+    -webkit-animation-duration: 45s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: normal;
@@ -209,7 +200,7 @@ body{
     -webkit-animation-fill-mode: forwards;
 
     -moz-animation-name: anim_titles;
-    -moz-animation-duration: 24.0s;
+    -moz-animation-duration: 45s;
     -moz-animation-timing-function: linear;
     -moz-animation-iteration-count: infinite;
     -moz-animation-direction: normal;
