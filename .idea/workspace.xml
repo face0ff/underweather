@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfcc3008-051c-46cd-a569-a16ae415c192" name="Default Changelist" comment="dfgdfgкенрке">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_01_2022,_11_03_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_01_2022__11_03__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/underweather/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/underweather/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather/static/weather/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/weather/static/weather/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/static/weather/images/basein.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/templates/weather/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather/templates/weather/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather/templates/weather/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather/templates/weather/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather/views.py" afterDir="false" />
     </list>
@@ -84,7 +89,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643749534467</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="dfgdfgкенрке">
+      <created>1643828915647</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1643828915647</updated>
+    </task>
+    <task id="LOCAL-00007" summary="dfgdfgкенрке">
+      <created>1643829027118</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1643829027118</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

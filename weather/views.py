@@ -33,6 +33,7 @@ def index(request):
         'tempVo': data['main']['temp'],
         'feel': data['main']['feels_like'],
         'press': data['main']['pressure'],
+        'humid': data['main']['humidity'],
         'windS': data['wind']['speed'],
         'windD': data['wind']['deg'],
         'sunrise': datetime.datetime.fromtimestamp(data['sys']['sunrise']).strftime('%H:%M'),
@@ -42,7 +43,9 @@ def index(request):
         'length_day': datetime.datetime.fromtimestamp(data['sys']['sunset']) - datetime.datetime.fromtimestamp(
             data['sys']['sunrise'])
 
+
     }
+
     return render(request, 'weather/index.html',  context=context,)
 
 # def reklama(request,rekid):

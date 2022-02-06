@@ -8,36 +8,39 @@
 
 
 
+
 <div class="container">
     <div class="backG">
         <div class="all_weather">
-            <h2>{{right_now}} город {{ gorod }}
-            <p>Рассвет в {{sunrise}} <p></p> Закат в {{sunset}}
-            <p>Температура воздуха = {{ tempVo }}°
-            <p>Ощущается как {{ feel}}°
+            <h2>{{right_now}} {{ gorod }}</h2>
+            <p>Рассвет в {{sunrise}} Закат в {{sunset}}
+            <h1>{{ tempVo }}°C</h1>
+            <p>Ощущается как {{ feel}}°C
             <p>Давление = {{ press }} мм рт. ст.
+            <p>Влажность = {{ humid }}%
             <p>Направление ветра  {{ windD }}°
-            <p>Скорость ветра = {{ windS }} М/c</h2>
+            <p>Скорость ветра = {{ windS }} М/c
 
 
         </div>
     </div>
 
-        <div class="mesta">
+
             <div class="slides">
                 <ul> <!-- Слайды -->
-                    <li><img src="{{mesta3.photo}}" alt="My image01"/>
-                        <div>{{ mesta3.title }} <img src="{% static 'weather/images/icons/cloud.png' %}"/> <img src="{% static 'weather/images/icons/rain.png' %}"/>
-                            <img src="{% static 'weather/images/icons/sun.png' %}"/> <img src="{% static 'weather/images/icons/storm.png' %}"/>
+                    <li><img src="{{mesta2.photo}}" alt="My image01"/>
+                        <div><h1>{{ mesta3.title }}</h1> <img src="{% static 'weather/images/air.png' %}"/><h1>{{ tempVo }}°C</h1>
+                            <img src="{% static 'weather/images/water.png' %}"/><h1>{{ tempVo }}°C</h1>
+
                             </div>
                     </li>
                     <li><img src="{{mesta2.photo}}" alt="My image02"/>
-                        <div>{{ mesta2.title }}
-                        {{ mesta2.content }}</div>
+                        <div><h1>{{ mesta2.title }}</h1> <img src="{% static 'weather/images/air.png' %}"/><h1>{{ tempVo }}°C</h1>
+                            <img src="{% static 'weather/images/water.png' %}"/><h1>{{ tempVo }}°C</h1></div>
                     </li>
-                    <li><img src="{{mesta1.photo}}" alt="My image03"/>
-                        <div>{{ mesta1.title }}
-                        {{ mesta1.content }}</div>
+                    <li><img src="{{mesta2.photo}}" alt="My image03"/>
+                        <div><h1>{{ mesta1.title }}</h1> <img src="{% static 'weather/images/air.png' %}"/><h1>{{ tempVo }}°C</h1>
+                            <img src="{% static 'weather/images/water.png' %}"/><h1>{{ tempVo }}°C</h1></div>
                     </li>
 
                 </ul>
@@ -46,6 +49,6 @@
 
         </div>
 
-</div>
+
 
 {% endblock %}
